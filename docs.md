@@ -1,0 +1,5 @@
+docker image
+
+docker pull mcr.microsoft.com/mssql/server:2022-latest
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=NOQA" -p 1433:1433 --name legacy-mysql -d mcr.microsoft.com/mssql/server:2022-latest
